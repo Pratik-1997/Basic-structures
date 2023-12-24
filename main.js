@@ -72,3 +72,12 @@ $(".close-btn").click(function () {
   $("body").removeClass("overflow-y-hidden");
 });
 // Modal Popup End
+
+// Load More Start
+$(".load-btn").click(function () {
+  $(".hidden-text").toggle();
+  var buttonText = $(".hidden-text").is(":visible") ? "Load Less" : "Load More";
+  $(this).text(buttonText);
+});
+
+//   Load More End
